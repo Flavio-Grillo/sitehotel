@@ -1,0 +1,266 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.imagem{
+    background-image: url(../imagens/HEADERBG.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /*largura */
+    height: 550px; /*altura */
+}
+
+.container{
+    position: relative;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens para os extremos */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%;
+    height: 600px;
+    padding: 20px; /* Adiciona algum espaço ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding na largura e altura total */
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.container_dois{
+    position: relative;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens para os extremos */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%;
+    height: 600px;
+    padding: 20px; /* Adiciona algum espaço ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding na largura e altura total */
+    margin-top: 100px;
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+
+.container_texto_um{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    padding-top: 200px;
+}
+
+.container_imagem_um{
+    height: 575px;
+    width: 706px;
+    background-image: url(../imagens/splash.png);
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+
+}
+
+
+.container_fundo_um{
+    height: 300px;
+    width: 380px;
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    padding-left: 150px;
+    padding-top: 100px;
+
+}
+
+.imagem_home{
+    background-image: url(../imagens/imagem_home.jpeg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /*largura */
+    height: 350px; /*altura */
+    border-radius: 10px;
+}
+
+
+
+.container_texto_dois{
+    height: 700px;
+    width: 500px;
+    margin: 20px;
+    padding-top: 180px;
+}
+
+.container_imagem_dois{
+    height: 575px;
+    width: 656px;
+    background-image: url(../imagens/splashazul.png);
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+
+}
+
+
+.container_fundo_dois{
+    height: 300px;
+    width: 380px;
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    padding-left: 150px;
+    padding-top: 40px;
+
+}
+
+.imagem_home_dois{
+    background-image: url(../imagens/hotel_pool.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /*largura */
+    height: 450px; /*altura */
+    border-radius: 10px;
+}
+
+
+
+.container_texto_tres{
+    height: 600px;
+    width: 500px;
+    margin: 20px;
+    padding-top: 200px;
+}
+
+.container_imagem_tres{
+    position: absolute;
+    height: 295px;
+    width: 296px;
+    border-radius: 15px;
+    background-image: url(../imagens/gato_ferias.jpeg);
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+    margin-left: 600px;
+    margin-top: 140px;
+    z-index: 1;
+
+}
+
+
+.imagem_home_tres{
+    position: relative;
+    background-image: url(../imagens/cachorroferias.jpeg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 600px; /*largura */
+    height: 280px; /*altura */
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 0px;
+    z-index: 0;
+}
+
+.imagem_home_quatro{
+    position: absolute;
+    background-image: url(../imagens/cachorro_ferias_dois.jpeg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 450px; /*largura */
+    height: 220px; /*altura */
+    border-radius: 10px;
+    margin-left: 820px;
+    margin-top: 400px;
+    z-index: 0;
+}
+
+
+.quarto{
+    background-image: url(../imagens/quarto_hotel.JPEG);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+
+p{
+   
+font-size: 18px;
+line-height: 1.8;
+color: #555;
+margin-bottom: 20px;
+text-align: justify;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+
+}
+
+#footer {
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(to top, #000000, #1a1919);
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    padding: 20px; /* Adiciona algum espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura e altura total */
+}
+
+.icons-container {
+    display: flex;
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+.icon {
+    width: 40px; /* Tamanho do ícone */
+    height: 40px; /* Tamanho do ícone */
+    background-color: white; /* Cor de fundo para os ícones (substitua por ícones reais) */
+    border-radius: 50%; /* Torna os ícones redondos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Cor do conteúdo dos ícones */
+    font-size: 20px; /* Tamanho do conteúdo dos ícones */
+    text-align: center; /* Centraliza o texto dentro do ícone */
+}
