@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    margin: 0%;
 }
 ol, ul {
     list-style: none;
@@ -130,7 +131,7 @@ nav ul li a:hover {
 }
 
 
-.container{
+.containerFLA{
     position: relative;
     display: flex; /* Ativa o Flexbox */
     justify-content: space-between; /* Espaça os itens para os extremos */
@@ -143,7 +144,7 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.container_dois{
+.container_doisFLA{
     position: relative;
     display: flex; /* Ativa o Flexbox */
     justify-content: space-between; /* Espaça os itens para os extremos */
@@ -157,14 +158,14 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.container_texto_um{
+.container_texto_umFLA{
     height: 400px;
     width: 400px;
     margin: 20px;
     padding-top: 200px;
 }
 
-.container_imagem_um{
+.container_imagem_umFLA{
     height: 575px;
     width: 706px;
     background-image: url(../imagens/splash.png);
@@ -175,7 +176,7 @@ nav ul li a:hover {
 }
 
 
-.container_fundo_um{
+.container_fundo_umFLA{
     height: 300px;
     width: 380px;
     background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -185,7 +186,7 @@ nav ul li a:hover {
 
 }
 
-.imagem_home{
+.imagem_homeFLA{
     background-image: url(../imagens/imagem_home.jpeg);
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -197,14 +198,14 @@ nav ul li a:hover {
 
 
 
-.container_texto_dois{
+.container_texto_doisFLA{
     height: 700px;
     width: 500px;
     margin: 20px;
     padding-top: 180px;
 }
 
-.container_imagem_dois{
+.container_imagem_doisFLA{
     height: 575px;
     width: 656px;
     background-image: url(../imagens/splashazul.png);
@@ -215,7 +216,7 @@ nav ul li a:hover {
 }
 
 
-.container_fundo_dois{
+.container_fundo_doisFLA{
     height: 300px;
     width: 380px;
     background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -225,7 +226,7 @@ nav ul li a:hover {
 
 }
 
-.imagem_home_dois{
+.imagem_home_doisFLA{
     background-image: url(../imagens/hotel_pool.jpg);
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -237,14 +238,14 @@ nav ul li a:hover {
 
 
 
-.container_texto_tres{
+.container_texto_tresFLA{
     height: 600px;
     width: 500px;
     margin: 20px;
     padding-top: 200px;
 }
 
-.container_imagem_tres{
+.container_imagem_tresFLA{
     position: absolute;
     height: 295px;
     width: 296px;
@@ -260,7 +261,7 @@ nav ul li a:hover {
 }
 
 
-.imagem_home_tres{
+.imagem_home_tresFLA{
     position: relative;
     background-image: url(../imagens/cachorroferias.jpeg);
     background-size: cover; /* Faz a imagem cobrir toda a tela */
@@ -274,7 +275,7 @@ nav ul li a:hover {
     z-index: 0;
 }
 
-.imagem_home_quatro{
+.imagem_home_quatroFLA{
     position: absolute;
     background-image: url(../imagens/cachorro_ferias_dois.jpeg);
     background-size: cover; /* Faz a imagem cobrir toda a tela */
@@ -289,7 +290,7 @@ nav ul li a:hover {
 }
 
 
-.quarto{
+.quartoFLA {
     background-image: url(../imagens/quarto_hotel.JPEG);
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -298,7 +299,38 @@ nav ul li a:hover {
     height: 600px;
     width: 100%;
     margin-bottom: 200px;
+    position: relative; /* Necessário para o posicionamento absoluto do card */
 }
+.info {
+    display: none; /* Inicialmente escondido */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semitransparente */
+    padding: 20px;
+    color: #fff; /* Texto branco */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Para sobrepor à imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 5%; /* Move mais para a esquerda */
+    width: 300px; /* Largura fixa do card */
+    height: auto; /* Ajusta a altura automaticamente */
+    transform: translate(-100%, -50%); /* Começa fora da tela à esquerda */
+    display: flex; /* Usar flexbox para organizar o texto */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    opacity: 0; /* Inicialmente invisível */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave para posição e opacidade */
+}
+
+.visible {
+    display: flex; /* Mostra o card como flexbox quando visível */
+    transform: translate(0, -50%); /* Move para sua posição original */
+    opacity: 1; /* Torna visível */
+}
+
 
 
 p{
@@ -313,6 +345,73 @@ margin-left: auto;
 margin-right: auto;
 padding: 10px;
 
+}
+
+.hospedesFLA{
+    font-size: 30px;
+    line-height: 1.8;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.avaliacao-tabelaFLA {
+    max-width: 1200px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Margem inferior em relação ao footer */
+    width: 1400px;
+}
+
+.avaliacao-tabelaFLA td {
+    padding: 25px;
+    border: 1px solid #e0e0e0; /* Adiciona bordas visíveis */
+    text-align: center;
+}
+
+.avaliacao-tabelaFLA td:last-child {
+    text-align: center;
+}
+
+.texto-loremFLA {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 100px;
+    
+}
+
+.estrelaFLA {
+    margin: 0 2px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 30px;
+    color: #ffcc00; /* Cor das estrelas */
+}
+
+.estrelasFLA:hover {
+    color: #ff9900;
+}
+
+.avaliacao-tabelaFLA tr:last-child td {
+    border-bottom: none;
+}
+
+.avaliacao-tabelaFLA {
+    width: 1200px; /* Ocupará toda a largura disponível */
+    height: 800px;
+    margin-bottom: 40px; /* Margem na div em relação ao footer */
+    margin-left: 100px;
+    margin-right: 200px;
 }
 
 #footer {
